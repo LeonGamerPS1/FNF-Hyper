@@ -1,0 +1,28 @@
+{
+  "title": "Bopeebo",
+  "notes": [
+    {
+      "strumTime": 1500,
+      "noteData": 0,
+      "mustPress": true,
+      "sustainLength": 300
+    },
+    {
+      "strumTime": 2000,
+      "noteData": 1,
+      "mustPress": false,
+      "sustainLength": 500
+    },
+    {
+      "strumTime": 2500,
+      "noteData": 2,
+      "mustPress": true,
+      "sustainLength": 400
+    }
+  ],
+  "meta": {
+    "Artist": "Funkin' Sound Team",
+    "Speed": 1,
+    "BPM": 100
+  }
+}

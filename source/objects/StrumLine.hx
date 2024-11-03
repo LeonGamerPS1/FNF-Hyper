@@ -1,5 +1,6 @@
 package objects;
 
+import flixel.FlxCamera;
 import flixel.FlxObject;
 import flixel.group.FlxGroup.FlxTypedGroup;
 import haxe.ds.StringMap;
@@ -7,6 +8,7 @@ import haxe.ds.StringMap;
 class StrumLine extends FlxTypedGroup<StrumNote> {
 	public var x:Float = 0;
 	public var y:Float = 0;
+
 	public var lanes(default, set):Int = 0;
 
 	public function new(lanes:Int = 4, X:Float = 0, Y:Float = 0) {
@@ -29,6 +31,8 @@ class StrumLine extends FlxTypedGroup<StrumNote> {
 	}
 
 	function genArrows(value:Int) {
+		killMembers();
+		destroyMembers();
 		for (i in 0...value) {
 			var strumNote:StrumNote = new StrumNote(60 * value, i);
 			strumNote.animation.play('static');
@@ -53,6 +57,8 @@ class StrumLine extends FlxTypedGroup<StrumNote> {
 		forEach(function(strumNote:StrumNote) {
 			strumNote.x = x + (strumNote.width * 0.7 * i);
 			strumNote.y = y;
+			strumNote.camera = camera;
+			strumNote.cameras = cameras;
 			i++;
 		});
 	}
