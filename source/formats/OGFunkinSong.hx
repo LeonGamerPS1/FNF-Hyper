@@ -90,7 +90,8 @@ class OGFunkinSong
 					strumTime: strumTime,
 					lane: value[1],
 					daLine: huhaa,
-					sustainLength: value[2]
+					sustainLength: value[2],
+					noteType: 'normal',
 				});
 			}
 			swaggy.push(section);

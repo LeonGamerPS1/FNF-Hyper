@@ -21,7 +21,6 @@ import states.MusicBeatState;
 
 using StringTools;
 
-
 class PlayState extends MusicBeatState
 {
 	var strumLinePlayer:StrumLine;
@@ -49,6 +48,8 @@ class PlayState extends MusicBeatState
 
 	public static var verbose = #if sys Sys.args().contains('--v') || Sys.args().contains('--verbose') || Sys.args().contains('-v')
 		|| Sys.args().contains('-verbose') #else false #end;
+
+	var blockedTypes:Array<String> = ['warning'];
 
 	override public function create()
 	{
@@ -94,8 +95,11 @@ class PlayState extends MusicBeatState
 				var daSus:Float = noteMeta.sustainLength;
 				var daLane:Int = noteMeta.lane;
 				var daLine:Int = noteMeta.daLine;
+				var daType:String = noteMeta.noteType;
+				if (daType == null)
+					daType = 'normal';
 
-				var note:Note = new Note(daStrumTime, daLane, false);
+				var note:Note = new Note(daStrumTime, daLane, false, daSus, null, daType);
 
 				note.daLine = daLine;
 				note.botNote = note.daLine != controlledStrum;
@@ -112,24 +116,27 @@ class PlayState extends MusicBeatState
 
 				unspawnNotes.push(note);
 
-				for (susNote in 0...Math.floor(susLength))
+				if (susLength > 0 && !blockedTypes.contains(daType))
 				{
-					oldNote = unspawnNotes[Std.int(unspawnNotes.length - 1)];
+					for (susNote in 0...Math.floor(susLength))
+					{
+						oldNote = unspawnNotes[Std.int(unspawnNotes.length - 1)];
 
-					var sustainNote:Note = new Note(daStrumTime
-						+ (Conductor.stepCrochet * susNote)
-						+ (Conductor.stepCrochet / FlxMath.roundDecimal(songSpeed, 2)), daLane, true, 0,
-						oldNote);
+						var sustainNote:Note = new Note(daStrumTime
+							+ (Conductor.stepCrochet * susNote)
+							+ (Conductor.stepCrochet / FlxMath.roundDecimal(songSpeed, 2)), daLane, true, 0,
+							oldNote);
 
-					sustainNote.botNote = note.botNote;
-					sustainNote.daLine = daLine;
-					sustainNote.scrollFactor.set();
-					// unspawnNotes.push(sustainNote);
-					// note.isSustai = false;
-					unspawnNotes.push(sustainNote);
+						sustainNote.botNote = note.botNote;
+						sustainNote.daLine = daLine;
+						sustainNote.scrollFactor.set();
+						// unspawnNotes.push(sustainNote);
+						// note.isSustai = false;
+						unspawnNotes.push(sustainNote);
 
-					// if (sustainNote.mustPress)
-					//	sustainNote.x += FlxG.width / 2; // general offset
+						// if (sustainNote.mustPress)
+						//	sustainNote.x += FlxG.width / 2; // general offset
+					}
 				}
 			}
 		}
@@ -194,7 +201,7 @@ class PlayState extends MusicBeatState
 			daNote.botNote = !strumGroup.playableStrumLine;
 
 			daNote.x = strumNote.x + daNote.offsetX;
-			daNote.y = (strumNote.y - (Conductor.songPosition - daStrumTime) * (0.45 * FlxMath.roundDecimal(SONG.meta.Speed, 2)));
+			daNote.y = (strumNote.y - (Conductor.songPosition - daStrumTime) * (0.45 * FlxMath.roundDecimal(SONG.meta.Speed * daNote.speedModifier, 2)));
 			if (daNote.botNote && daNote.wasGoodHit && !daNote.wasHit)
 			{
 				daNote.wasHit = true;
@@ -265,7 +272,10 @@ class PlayState extends MusicBeatState
 
 	function fuckingDestroy(dundy:Note, dundys:FlxTypedGroup<Note>)
 	{
+		if (dundy.wasGoodHit && dundy.hitSound != '' && dundy.hitSound != null)
+			FlxG.sound.play('assets/sounds/${dundy.hitSound}.ogg');
 		dundy.kill();
+	
 		dundys.remove(dundy, true);
 		dundy.destroy();
 	}

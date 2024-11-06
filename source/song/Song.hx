@@ -11,7 +11,7 @@ typedef SwagSong =
 	var sections:Array<SwagSection>;
 
 	var needsVoices:Bool;
-	
+
 	var meta:{Artist:String, Speed:Float, BPM:Float};
 }
 
@@ -22,7 +22,8 @@ typedef SwagSection =
 			strumTime:Float,
 			lane:Int,
 			daLine:Int,
-			sustainLength:Float
+			sustainLength:Float,
+			noteType:String,
 		}>;
 }
 

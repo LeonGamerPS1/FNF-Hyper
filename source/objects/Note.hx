@@ -28,37 +28,55 @@ class Note extends FlxSprite
 	public var mustPress:Bool = false;
 	public var isSustainNote:Bool = false;
 	public var ignoreNote:Bool = false;
+	public var noteType:String = 'normal';
+	public var hitSound:String = '';
+	public var speedModifier:Float = 1;
 
-	public function new(strumTime:Float = 0, lane:Int = 0, isSustainNote:Bool = false, sustainLength:Float = 0, ?prevNote:Note)
+	public function new(strumTime:Float = 0, lane:Int = 0, isSustainNote:Bool = false, sustainLength:Float = 0, ?prevNote:Note, noteType:String = 'normal')
 	{
 		super(-203, -2000);
-		frames = FlxAtlasFrames.fromSparrow(AssetPaths.NOTE_assets__png, AssetPaths.NOTE_assets__xml);
-		setGraphicSize(width * 0.7);
-		// updateHitbox();
-		animation.addByPrefix("arrow", '${colArray[lane % 4]}');
-		animation.play('arrow');
 
 		this.strumTime = strumTime;
 		this.lane = lane;
 		this.isSustainNote = isSustainNote;
 		this.sustainLength = sustainLength;
 		this.prevNote = prevNote;
-		if (isSustainNote && prevNote != null)
-		{
-			animation.addByPrefix('end', '${susArray[lane % 4]} hold end');
-			animation.play('end');
-			alpha = 0.4;
-			offsetX = width * 0.76 / 2;
-			updateHitbox();
-			if (prevNote.isSustainNote)
-			{
-				prevNote.animation.addByPrefix('hold', '${susArray[lane % 4]} hold piece');
-				prevNote.animation.play('hold');
+		this.noteType = noteType;
 
-				prevNote.scale.y *= Conductor.stepCrochet / 100 * 1.5 * PlayState.SONG.meta.Speed;
-				prevNote.updateHitbox();
-			}
-			// prevNote.updateHitbox();
+		switch noteType.toLowerCase()
+		{
+			case 'warning':
+				hitSound = 'shooters';
+				loadGraphic('assets/images/warning.png', true, 157, 154, false, 'warning_png');
+				animation.add('arrow', [0], 4, true);
+				animation.play('arrow');
+				setGraphicSize(width * 0.7);
+				speedModifier = 1.2;
+
+			case _ | 'normal':
+				frames = FlxAtlasFrames.fromSparrow(AssetPaths.NOTE_assets__png, AssetPaths.NOTE_assets__xml);
+				setGraphicSize(width * 0.7);
+				// updateHitbox();
+				animation.addByPrefix("arrow", '${colArray[lane % 4]}');
+				animation.play('arrow');
+
+				if (isSustainNote && prevNote != null)
+				{
+					animation.addByPrefix('end', '${susArray[lane % 4]} hold end');
+					animation.play('end');
+					//alpha = 0.4;
+					offsetX = width * 0.76 / 2;
+					updateHitbox();
+					if (prevNote.isSustainNote)
+					{
+						prevNote.animation.addByPrefix('hold', '${susArray[lane % 4]} hold piece');
+						prevNote.animation.play('hold');
+
+						prevNote.scale.y *= Conductor.stepCrochet / 100 * 1.5 * PlayState.SONG.meta.Speed;
+						prevNote.updateHitbox();
+					}
+					// prevNote.updateHitbox();
+				}
 		}
 	}
 
@@ -93,7 +111,7 @@ class Note extends FlxSprite
 
 	public function clipToStrumNote(myStrum:StrumNote)
 	{
-		var center:Float = myStrum.y + offsetY + PlayState.swag / FlxG.random.float(2.0,1.0); 
+		var center:Float = myStrum.y + offsetY + PlayState.swag / 2;
 		if (isSustainNote && (!botNote || !ignoreNote) && (botNote || (wasGoodHit || (prevNote.wasGoodHit && !canBeHit))))
 		{
 			var swagRect:FlxRect = clipRect;
