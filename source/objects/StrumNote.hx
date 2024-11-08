@@ -3,15 +3,33 @@ package objects;
 import flixel.FlxSprite;
 import flixel.graphics.frames.FlxAtlasFrames;
 
-class StrumNote extends FlxSprite {
+class StrumNote extends FlxSprite
+{
 	public static var directionColArray:Array<String> = ["arrowLEFT", "arrowDOWN", "arrowUP", "arrowRIGHT"];
+	public static var dirArray:Array<String> = ["left", "down", "up", "right"];
 
-	public function new(X:Float = 1, id:Int = 0) {
+	public var sustainReduce:Bool = true;
+	public var downScroll:Bool = false;
+
+	public function new(X:Float = 1, id:Int = 0)
+	{
 		super(X, 50);
 		frames = FlxAtlasFrames.fromSparrow(AssetPaths.NOTE_assets__png, AssetPaths.NOTE_assets__xml);
 		setGraphicSize(width * 0.7);
-		animation.addByPrefix("static", '${directionColArray[id % 4]}');
-		
+		animation.addByPrefix("static", '${directionColArray[id % 4]}', 1, false);
+		animation.addByPrefix("confirm", '${dirArray[id % 4]} confirm', 30, false);
+		animation.addByPrefix("press", '${dirArray[id % 4]} press', 30, false);
+		antialiasing = true;
 		this.ID = id;
+	}
+
+	public function playAnim(anim:String, ?force:Bool = false)
+	{
+		animation.play(anim, force);
+		if (animation.curAnim != null)
+		{
+			centerOffsets();
+			centerOrigin();
+		}
 	}
 }
