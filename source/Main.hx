@@ -7,6 +7,7 @@ import openfl.display.Sprite;
 import openfl.system.System;
 import openfl.text.TextField;
 import openfl.text.TextFormat;
+import states.TitleState;
 #if gl_stats
 import openfl.display._internal.stats.Context3DStats;
 import openfl.display._internal.stats.DrawCallContext;
@@ -20,7 +21,7 @@ class Main extends Sprite
 	public function new()
 	{
 		super();
-		addChild(new FlxGame(0, 0, PlayState));
+		addChild(new FlxGame(0, 0, TitleState));
 		PlayerSettings.init();
 		var fps:FPES;
 		fps = new FPES(10, 10, 0xFFFFFF);

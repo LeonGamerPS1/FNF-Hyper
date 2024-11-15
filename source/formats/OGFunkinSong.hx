@@ -79,7 +79,10 @@ class OGFunkinSong
 		for (index => sec in sections)
 		{
 			var section:SwagSection = {
-				notes: []
+				notes: [],
+				altAnim: sec.altAnim,
+				changeBPM: sec.changeBPM,
+				bpm: sec.bpm
 			};
 
 			for (index => value in sec.sectionNotes)
