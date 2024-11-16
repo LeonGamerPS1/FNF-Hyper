@@ -9,6 +9,7 @@ class StrumNote extends FlxSprite
 	public static var dirArray:Array<String> = ["left", "down", "up", "right"];
 
 	public var sustainReduce:Bool = true;
+	public var direction:Float = 90;
 	public var downScroll:Bool = false;
 
 	public function new(X:Float = 1, id:Int = 0)
@@ -17,8 +18,10 @@ class StrumNote extends FlxSprite
 		frames = FlxAtlasFrames.fromSparrow(AssetPaths.NOTE_assets__png, AssetPaths.NOTE_assets__xml);
 		setGraphicSize(width * 0.7);
 		animation.addByPrefix("static", '${directionColArray[id % 4]}', 1, false);
-		animation.addByPrefix("confirm", '${dirArray[id % 4]} confirm', 30, false);
+		animation.addByPrefix("confirm", '${dirArray[id % 4]} confirm', 24, false);
 		animation.addByPrefix("press", '${dirArray[id % 4]} press', 30, false);
+		playAnim('static');
+		updateHitbox();
 		antialiasing = true;
 		this.ID = id;
 	}
@@ -31,5 +34,10 @@ class StrumNote extends FlxSprite
 			centerOffsets();
 			centerOrigin();
 		}
+	}
+
+	override  function update(elapsed:Float) {
+	   super.update(elapsed);
+	  // direction += 0.1;	
 	}
 }

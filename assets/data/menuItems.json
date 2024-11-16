@@ -1,0 +1,12 @@
+{
+  "items": [
+    {
+      "name": "Play-State",
+      "TargetState": "PlayState"
+    },
+     {
+      "name": "Freeplay",
+      "TargetState": "Freeplay"
+    }
+  ]
+}

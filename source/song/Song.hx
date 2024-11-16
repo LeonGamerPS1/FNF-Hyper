@@ -17,6 +17,9 @@ typedef SwagSong =
 
 typedef SwagSection =
 {
+	var bpm:Int;
+	var changeBPM:Bool;
+	var altAnim:Bool;
 	var notes:Array<
 		{
 			strumTime:Float,

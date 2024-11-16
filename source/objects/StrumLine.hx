@@ -42,8 +42,11 @@ class StrumLine extends FlxTypedGroup<StrumNote>
 		destroyMembers();
 		for (i in 0...value)
 		{
-			var strumNote:StrumNote = new StrumNote(60 * value, i);
+			var strumNote:StrumNote = new StrumNote(0, i);
 			strumNote.playAnim('static');
+			strumNote.x = x + PlayState.swag * i;
+			strumNote.y = y;
+			strumNote.downScroll = PlayState.downScroll;
 			add(strumNote);
 		}
 	}
@@ -67,8 +70,8 @@ class StrumLine extends FlxTypedGroup<StrumNote>
 		var i = 0;
 		forEach(function(strumNote:StrumNote)
 		{
-			strumNote.x = x + (strumNote.width * 0.7 * i);
-			strumNote.y = y;
+			//.x = x + PlayState.swag * i;
+			//strumNote.y = y;
 			strumNote.camera = camera;
 			strumNote.cameras = cameras;
 			// ! i am too lazy to like uuuuuuuuuuuuuuuuuuuuhm add daline thing to strumnotes aswell boyyyyyyyyyyyyyyyyyyyyy
