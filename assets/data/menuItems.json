@@ -1,12 +1,14 @@
 {
+  "textSize": 20,
+  "font": "VCR OSD Mono",
   "items": [
     {
       "name": "Play-State",
-      "TargetState": "PlayState"
+      "TargetState": "TitleState"
     },
-     {
+    {
       "name": "Freeplay",
-      "TargetState": "Freeplay"
+      "TargetState": "TitleState"
     }
   ]
 }

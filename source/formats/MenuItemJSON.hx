@@ -7,6 +7,8 @@ using StringTools;
 
 typedef MenuItems =
 {
+	var textSize:Null<Int>;
+	var font:Null<String>;
 	var items:Array<MenuItem>;
 }
 
