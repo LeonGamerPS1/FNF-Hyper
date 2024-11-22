@@ -53,7 +53,7 @@ class OGFunkinSong
 
 	public static function loadFromJson(jsonInput:String):LegacyFunkin
 	{
-		var rawJson = Assets.getText(jsonInput).trim();
+		var rawJson:String = #if !sys Assets.getText(jsonInput).trim() #else sys.io.File.read(jsonInput).readAll().toString() #end;
 
 		while (!rawJson.endsWith("}"))
 		{
@@ -70,7 +70,7 @@ class OGFunkinSong
 
 		var songbpm = song.bpm;
 		var songSpeed = song.speed;
-		var songName = song.song;
+		var songName = song.song.toLowerCase();
 		var songNotes = song.notes;
 		var songVoices = song.needsVoices;
 		var sections:Array<LegacyFunkinSection> = songNotes;
@@ -118,9 +118,11 @@ class OGFunkinSong
 		trace('Writing converted song "$songName" to conv/$songName.json file.');
 		if (!sys.FileSystem.exists('./conv/'))
 			sys.FileSystem.createDirectory('./conv/');
+		if (!sys.FileSystem.exists('./conv/$songName'))
+			sys.FileSystem.createDirectory('./conv/$songName');
 
-		sys.io.File.saveContent('./conv/$songName.json', savedJSON);
-		trace('Saved ${FlxStringUtil.formatBytes(Std.parseFloat('${sys.FileSystem.stat('./conv/$songName.json').size} '))} "to ./conv/$songName.json". ');
+		sys.io.File.saveContent('./conv/$songName/easy.json', savedJSON);
+		trace('Saved ${FlxStringUtil.formatBytes(Std.parseFloat('${sys.FileSystem.stat('./conv/$songName/easy.json').size} '))} "to ./conv/$songName.json". ');
 		#end
 
 		return songShit;
@@ -129,7 +131,7 @@ class OGFunkinSong
 	public static function parseJSONshit(rawJson:String):LegacyFunkin
 	{
 		var swagShit:LegacyFunkin = cast Json.parse(rawJson).song;
-		swagShit.validScore = true;
+		//s//wagShit.validScore = true;
 		return swagShit;
 	}
 }

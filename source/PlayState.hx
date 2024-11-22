@@ -1,12 +1,14 @@
 package;
 
+import backend.Sort;
 import flixel.FlxCamera;
 import flixel.FlxG;
 import flixel.group.FlxGroup.FlxTypedGroup;
 import flixel.math.FlxMath;
 import flixel.sound.FlxSound;
 import flixel.tweens.FlxTween;
-import formats.OGFunkinSong;
+import flixel.util.FlxSort;
+import flixel.util.FlxSort;
 import haxe.Timer;
 import objects.CountdownHandler;
 import objects.Note;
@@ -43,7 +45,7 @@ class PlayState extends MusicBeatState
 	public var startingSong:Bool = false;
 	public var startedCountdown:Bool = false;
 
-	public static var downScroll:Bool = false;
+	public static var downScroll:Bool = true;
 
 	public static var verbose = #if sys Sys.args().contains('--v') || Sys.args().contains('--verbose') || Sys.args().contains('-v')
 		|| Sys.args().contains('-verbose') #else false #end;
@@ -56,7 +58,7 @@ class PlayState extends MusicBeatState
 		// var songy:LegacyFunkin = OGFunkinSong.loadFromJson('assets/songs/bopeebo/legacy.json');
 
 		if (SONG == null)
-			SONG = Song.parseSong('assets/songs/bopeebo/hard.json'); // OGFunkinSong.toHyper(songy);
+			SONG = Song.parseSong('assets/songs/milf/hard.json'); // OGFunkinSong.toHyper(songy);
 		//	trace(SONG);
 
 		notes = new FlxTypedGroup();
@@ -164,6 +166,8 @@ class PlayState extends MusicBeatState
 		FlxTween.tween(Conductor, {songPosition: -50}, Conductor.crochet / 1000 * 4.5);
 
 		startCountdown();
+
+		unspawnNotes.sort(Sort.sortByTime);
 	}
 
 	function startSong()
@@ -185,7 +189,7 @@ class PlayState extends MusicBeatState
 
 		if (unspawnNotes[0] != null)
 		{
-			if (unspawnNotes[0].strumTime - Conductor.songPosition < 1500 / SONG.meta.Speed)
+			if (unspawnNotes[0].strumTime - Conductor.songPosition < 3000 / SONG.meta.Speed)
 			{
 				var dunceNote:Note = unspawnNotes[0];
 				notes.add(dunceNote);
@@ -345,6 +349,8 @@ class PlayState extends MusicBeatState
 	override public function beatHit()
 	{
 		super.beatHit();
+		if (startedCountdown || startedSong)
+			notes.sort(FlxSort.byY,downScroll ? FlxSort.ASCENDING : FlxSort.DESCENDING);
 		if (curBeat % 4 == 0)
 			zoomcam();
 	}

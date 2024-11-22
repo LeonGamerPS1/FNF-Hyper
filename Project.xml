@@ -31,6 +31,7 @@
 
 	<set name="BUILD_DIR" value="export" />
 	<source path="source" />
+	<haxelib name="flxanimate" />
 	<assets path="assets" exclude="*.pdn" />
 
 	<haxedef name="gl_stats"/>

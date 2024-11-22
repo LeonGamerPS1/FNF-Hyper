@@ -21,7 +21,7 @@ class Main extends Sprite
 	public function new()
 	{
 		super();
-		addChild(new FlxGame(0, 0, TitleState));
+		addChild(new FlxGame(0, 0, PlayState));
 		PlayerSettings.init();
 		var fps:FPES;
 		fps = new FPES(10, 10, 0xFFFFFF);
