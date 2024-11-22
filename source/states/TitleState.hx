@@ -7,6 +7,10 @@ import flixel.effects.FlxFlicker;
 import flixel.text.FlxText;
 import flixel.tweens.FlxTween;
 import formats.MenuItemJSON;
+import formats.OGFunkinSong;
+import objects.AtlasSprite;
+import song.Song.SwagSong;
+import sys.io.File;
 
 class TitleState extends MusicBeatState {
 	var menuBois:Array<FlxText>;
@@ -15,9 +19,14 @@ class TitleState extends MusicBeatState {
 
 	var curSelected:Int = 0;
 
+	public var gf:AtlasSprite;
+
 	override function create() {
 		FlxG.sound.cache('assets/songs/bopeebo/Inst.ogg');
 		FlxG.sound.playMusic('assets/songs/bopeebo/Inst.ogg', 0.5, true);
+		gf = new AtlasSprite(200, 500);
+		add(gf.atlas);
+		add(gf);
 
 		menuBois = [];
 		var parsey = MenuItemJSON.parseShit('menuItems.json');
@@ -43,9 +52,9 @@ class TitleState extends MusicBeatState {
 			states.push(state);
 		}
 		for (index => value in originalBffs)
+		{
 			originalBffs.remove(value);
-
-		trace(states);
+		}
 		originalBffs = null;
 		#if cpp cpp.vm.Gc.run(true); #end
 
@@ -54,6 +63,8 @@ class TitleState extends MusicBeatState {
 
 	override function update(elapsed:Float) {
 		super.update(elapsed);
+		Conductor.songPosition = FlxG.sound.music.time;
+		FlxG.camera.zoom = FlxMath.lerp(1, FlxG.camera.zoom, 0.9);
 
 		var i = 0;
 
@@ -99,5 +110,10 @@ class TitleState extends MusicBeatState {
 
 		super.destroy();
 		// FlxG.sound.music.destroy();
+	}
+
+	override function beatHit()
+	{
+		FlxG.camera.zoom += 0.05;
 	}
 }
