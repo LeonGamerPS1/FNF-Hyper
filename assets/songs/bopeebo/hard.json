@@ -1,1 +1,1060 @@
-{"sections":[{"notes":[{"strumTime":0,"daLine":0,"lane":2,"noteType":"normal","sustainLength":0},{"strumTime":600,"daLine":0,"lane":3,"noteType":"normal","sustainLength":450},{"strumTime":1050,"daLine":0,"lane":3,"noteType":"normal","sustainLength":600}],"altAnim":null,"bpm":null,"changeBPM":null},{"notes":[{"strumTime":2400,"daLine":1,"lane":2,"noteType":"normal","sustainLength":0},{"strumTime":3000,"daLine":1,"lane":3,"noteType":"normal","sustainLength":450},{"strumTime":3450,"daLine":1,"lane":3,"noteType":"normal","sustainLength":600}],"altAnim":null,"bpm":null,"changeBPM":null},{"notes":[{"strumTime":4800,"daLine":0,"lane":1,"noteType":"normal","sustainLength":300},{"strumTime":5400,"daLine":0,"lane":0,"noteType":"normal","sustainLength":300},{"strumTime":6000,"daLine":0,"lane":3,"noteType":"normal","sustainLength":300}],"altAnim":null,"bpm":null,"changeBPM":null},{"notes":[{"strumTime":7200,"daLine":1,"lane":1,"noteType":"normal","sustainLength":300},{"strumTime":7800,"daLine":1,"lane":0,"noteType":"normal","sustainLength":300},{"strumTime":8400,"daLine":1,"lane":3,"noteType":"normal","sustainLength":300}],"altAnim":null,"bpm":null,"changeBPM":null},{"notes":[{"strumTime":9600,"daLine":0,"lane":1,"noteType":"normal","sustainLength":150},{"strumTime":10200,"daLine":0,"lane":3,"noteType":"normal","sustainLength":0},{"strumTime":10500,"daLine":0,"lane":0,"noteType":"normal","sustainLength":0},{"strumTime":10800,"daLine":0,"lane":1,"noteType":"normal","sustainLength":450}],"altAnim":null,"bpm":null,"changeBPM":null},{"notes":[{"strumTime":12000,"daLine":1,"lane":1,"noteType":"normal","sustainLength":150},{"strumTime":12600,"daLine":1,"lane":3,"noteType":"normal","sustainLength":0},{"strumTime":12900,"daLine":1,"lane":0,"noteType":"normal","sustainLength":0},{"strumTime":13200,"daLine":1,"lane":1,"noteType":"normal","sustainLength":450}],"altAnim":null,"bpm":null,"changeBPM":null},{"notes":[{"strumTime":14400,"daLine":0,"lane":3,"noteType":"normal","sustainLength":0},{"strumTime":14700,"daLine":0,"lane":1,"noteType":"normal","sustainLength":0},{"strumTime":15300,"daLine":0,"lane":0,"noteType":"normal","sustainLength":0},{"strumTime":15600,"daLine":0,"lane":2,"noteType":"normal","sustainLength":300}],"altAnim":null,"bpm":null,"changeBPM":null},{"notes":[{"strumTime":16800,"daLine":1,"lane":3,"noteType":"normal","sustainLength":0},{"strumTime":17100,"daLine":1,"lane":1,"noteType":"normal","sustainLength":0},{"strumTime":17700,"daLine":1,"lane":0,"noteType":"normal","sustainLength":0},{"strumTime":18000,"daLine":1,"lane":2,"noteType":"normal","sustainLength":300}],"altAnim":null,"bpm":null,"changeBPM":null},{"notes":[{"strumTime":19200,"daLine":0,"lane":0,"noteType":"normal","sustainLength":0},{"strumTime":19500,"daLine":0,"lane":3,"noteType":"normal","sustainLength":0},{"strumTime":19800,"daLine":0,"lane":1,"noteType":"normal","sustainLength":750}],"altAnim":null,"bpm":null,"changeBPM":null},{"notes":[{"strumTime":21600,"daLine":1,"lane":0,"noteType":"normal","sustainLength":0},{"strumTime":21900,"daLine":1,"lane":3,"noteType":"normal","sustainLength":0},{"strumTime":22200,"daLine":1,"lane":1,"noteType":"normal","sustainLength":750}],"altAnim":null,"bpm":null,"changeBPM":null},{"notes":[{"strumTime":24000,"daLine":0,"lane":1,"noteType":"normal","sustainLength":0},{"strumTime":24300,"daLine":0,"lane":3,"noteType":"normal","sustainLength":0},{"strumTime":24600,"daLine":0,"lane":0,"noteType":"normal","sustainLength":750}],"altAnim":null,"bpm":null,"changeBPM":null},{"notes":[{"strumTime":26700,"daLine":1,"lane":3,"noteType":"normal","sustainLength":0},{"strumTime":27000,"daLine":1,"lane":0,"noteType":"normal","sustainLength":750},{"strumTime":26400,"daLine":1,"lane":1,"noteType":"normal","sustainLength":0}],"altAnim":null,"bpm":null,"changeBPM":null},{"notes":[{"strumTime":28800,"daLine":0,"lane":2,"noteType":"normal","sustainLength":0},{"strumTime":29100,"daLine":0,"lane":3,"noteType":"normal","sustainLength":0},{"strumTime":29400,"daLine":0,"lane":0,"noteType":"normal","sustainLength":1050}],"altAnim":null,"bpm":null,"changeBPM":null},{"notes":[{"strumTime":31200,"daLine":1,"lane":2,"noteType":"normal","sustainLength":0},{"strumTime":31500,"daLine":1,"lane":3,"noteType":"normal","sustainLength":0},{"strumTime":31800,"daLine":1,"lane":0,"noteType":"normal","sustainLength":1050}],"altAnim":null,"bpm":null,"changeBPM":null},{"notes":[{"strumTime":33600,"daLine":0,"lane":0,"noteType":"normal","sustainLength":0},{"strumTime":33900,"daLine":0,"lane":3,"noteType":"normal","sustainLength":0},{"strumTime":34500,"daLine":0,"lane":2,"noteType":"normal","sustainLength":0},{"strumTime":34800,"daLine":0,"lane":1,"noteType":"normal","sustainLength":450}],"altAnim":null,"bpm":null,"changeBPM":null},{"notes":[{"strumTime":36000,"daLine":1,"lane":0,"noteType":"normal","sustainLength":0},{"strumTime":36300,"daLine":1,"lane":3,"noteType":"normal","sustainLength":0},{"strumTime":36900,"daLine":1,"lane":2,"noteType":"normal","sustainLength":0},{"strumTime":37200,"daLine":1,"lane":1,"noteType":"normal","sustainLength":450}],"altAnim":null,"bpm":null,"changeBPM":null},{"notes":[{"strumTime":38400,"daLine":0,"lane":2,"noteType":"normal","sustainLength":450},{"strumTime":39000,"daLine":0,"lane":3,"noteType":"normal","sustainLength":300},{"strumTime":39600,"daLine":0,"lane":0,"noteType":"normal","sustainLength":450}],"altAnim":null,"bpm":null,"changeBPM":null},{"notes":[{"strumTime":40800,"daLine":1,"lane":2,"noteType":"normal","sustainLength":450},{"strumTime":41400,"daLine":1,"lane":3,"noteType":"normal","sustainLength":300},{"strumTime":42000,"daLine":1,"lane":0,"noteType":"normal","sustainLength":450}],"altAnim":null,"bpm":null,"changeBPM":null},{"notes":[{"strumTime":43200,"daLine":0,"lane":1,"noteType":"normal","sustainLength":0},{"strumTime":43800,"daLine":0,"lane":2,"noteType":"normal","sustainLength":0},{"strumTime":44400,"daLine":0,"lane":1,"noteType":"normal","sustainLength":0},{"strumTime":44550,"daLine":0,"lane":1,"noteType":"normal","sustainLength":0},{"strumTime":44700,"daLine":0,"lane":1,"noteType":"normal","sustainLength":0},{"strumTime":45000,"daLine":0,"lane":2,"noteType":"normal","sustainLength":0}],"altAnim":null,"bpm":null,"changeBPM":null},{"notes":[{"strumTime":45600,"daLine":1,"lane":1,"noteType":"normal","sustainLength":0},{"strumTime":46200,"daLine":1,"lane":2,"noteType":"normal","sustainLength":0},{"strumTime":46800,"daLine":1,"lane":1,"noteType":"normal","sustainLength":0},{"strumTime":46950,"daLine":1,"lane":1,"noteType":"normal","sustainLength":0},{"strumTime":47100,"daLine":1,"lane":1,"noteType":"normal","sustainLength":0},{"strumTime":47400,"daLine":1,"lane":2,"noteType":"normal","sustainLength":0}],"altAnim":null,"bpm":null,"changeBPM":null},{"notes":[{"strumTime":48000,"daLine":0,"lane":2,"noteType":"normal","sustainLength":450},{"strumTime":48600,"daLine":0,"lane":3,"noteType":"normal","sustainLength":300},{"strumTime":49200,"daLine":0,"lane":0,"noteType":"normal","sustainLength":450}],"altAnim":null,"bpm":null,"changeBPM":null},{"notes":[{"strumTime":50400,"daLine":1,"lane":2,"noteType":"normal","sustainLength":450},{"strumTime":51000,"daLine":1,"lane":3,"noteType":"normal","sustainLength":300},{"strumTime":51600,"daLine":1,"lane":0,"noteType":"normal","sustainLength":450}],"altAnim":null,"bpm":null,"changeBPM":null},{"notes":[{"strumTime":52800,"daLine":0,"lane":3,"noteType":"normal","sustainLength":1650}],"altAnim":null,"bpm":null,"changeBPM":null},{"notes":[{"strumTime":55200,"daLine":1,"lane":3,"noteType":"normal","sustainLength":1650},{"strumTime":55650,"daLine":1,"lane":4,"noteType":"normal","sustainLength":0}],"altAnim":null,"bpm":null,"changeBPM":null},{"notes":[{"strumTime":57600,"daLine":0,"lane":2,"noteType":"normal","sustainLength":0},{"strumTime":57900,"daLine":0,"lane":3,"noteType":"normal","sustainLength":0},{"strumTime":58200,"daLine":0,"lane":0,"noteType":"normal","sustainLength":1050}],"altAnim":null,"bpm":null,"changeBPM":null},{"notes":[{"strumTime":60000,"daLine":1,"lane":2,"noteType":"normal","sustainLength":0},{"strumTime":60300,"daLine":1,"lane":3,"noteType":"normal","sustainLength":0},{"strumTime":60600,"daLine":1,"lane":0,"noteType":"normal","sustainLength":1050},{"strumTime":62100,"daLine":1,"lane":6,"noteType":"normal","sustainLength":0}],"altAnim":null,"bpm":null,"changeBPM":null},{"notes":[{"strumTime":62400,"daLine":0,"lane":0,"noteType":"normal","sustainLength":0},{"strumTime":62700,"daLine":0,"lane":3,"noteType":"normal","sustainLength":0},{"strumTime":63300,"daLine":0,"lane":2,"noteType":"normal","sustainLength":0},{"strumTime":63600,"daLine":0,"lane":1,"noteType":"normal","sustainLength":450},{"strumTime":64500,"daLine":0,"lane":6,"noteType":"normal","sustainLength":0}],"altAnim":null,"bpm":null,"changeBPM":null},{"notes":[{"strumTime":64800,"daLine":1,"lane":0,"noteType":"normal","sustainLength":0},{"strumTime":65100,"daLine":1,"lane":3,"noteType":"normal","sustainLength":0},{"strumTime":65700,"daLine":1,"lane":2,"noteType":"normal","sustainLength":0},{"strumTime":66000,"daLine":1,"lane":1,"noteType":"normal","sustainLength":450}],"altAnim":null,"bpm":null,"changeBPM":null},{"notes":[{"strumTime":67200,"daLine":0,"lane":2,"noteType":"normal","sustainLength":0},{"strumTime":67500,"daLine":0,"lane":3,"noteType":"normal","sustainLength":0},{"strumTime":67800,"daLine":0,"lane":0,"noteType":"normal","sustainLength":0},{"strumTime":68100,"daLine":0,"lane":2,"noteType":"normal","sustainLength":0},{"strumTime":68400,"daLine":0,"lane":1,"noteType":"normal","sustainLength":450}],"altAnim":null,"bpm":null,"changeBPM":null},{"notes":[{"strumTime":69600,"daLine":1,"lane":2,"noteType":"normal","sustainLength":0},{"strumTime":69900,"daLine":1,"lane":3,"noteType":"normal","sustainLength":0},{"strumTime":70200,"daLine":1,"lane":0,"noteType":"normal","sustainLength":0},{"strumTime":70500,"daLine":1,"lane":2,"noteType":"normal","sustainLength":0},{"strumTime":70800,"daLine":1,"lane":1,"noteType":"normal","sustainLength":450},{"strumTime":71700,"daLine":1,"lane":6,"noteType":"normal","sustainLength":0}],"altAnim":null,"bpm":null,"changeBPM":null},{"notes":[{"strumTime":72000,"daLine":0,"lane":0,"noteType":"normal","sustainLength":0},{"strumTime":72300,"daLine":0,"lane":3,"noteType":"normal","sustainLength":0},{"strumTime":72900,"daLine":0,"lane":2,"noteType":"normal","sustainLength":0},{"strumTime":73200,"daLine":0,"lane":1,"noteType":"normal","sustainLength":450},{"strumTime":74100,"daLine":0,"lane":6,"noteType":"normal","sustainLength":0}],"altAnim":null,"bpm":null,"changeBPM":null},{"notes":[{"strumTime":74400,"daLine":1,"lane":0,"noteType":"normal","sustainLength":0},{"strumTime":74700,"daLine":1,"lane":3,"noteType":"normal","sustainLength":0},{"strumTime":75300,"daLine":1,"lane":2,"noteType":"normal","sustainLength":0},{"strumTime":75600,"daLine":1,"lane":1,"noteType":"normal","sustainLength":450}],"altAnim":null,"bpm":null,"changeBPM":null},{"notes":[],"altAnim":null,"bpm":100,"changeBPM":false}],"needsVoices":true,"title":"bopeebo","meta":{"Artist":"Unknown","BPM":100,"Speed":1.6}}
+{
+  "sections": [
+    {
+      "notes": [
+        {
+          "strumTime": 0,
+          "daLine": 0,
+          "lane": 2,
+          "noteType": "normal",
+          "sustainLength": 0
+        },
+        {
+          "strumTime": 600,
+          "daLine": 0,
+          "lane": 3,
+          "noteType": "normal",
+          "sustainLength": 450
+        },
+        {
+          "strumTime": 1050,
+          "daLine": 0,
+          "lane": 3,
+          "noteType": "normal",
+          "sustainLength": 600
+        }
+      ],
+      "altAnim": null,
+      "bpm": null,
+      "changeBPM": null
+    },
+    {
+      "notes": [
+        {
+          "strumTime": 2400,
+          "daLine": 1,
+          "lane": 2,
+          "noteType": "normal",
+          "sustainLength": 0
+        },
+        {
+          "strumTime": 3000,
+          "daLine": 1,
+          "lane": 3,
+          "noteType": "normal",
+          "sustainLength": 450
+        },
+        {
+          "strumTime": 3450,
+          "daLine": 1,
+          "lane": 3,
+          "noteType": "normal",
+          "sustainLength": 600
+        }
+      ],
+      "altAnim": null,
+      "bpm": null,
+      "changeBPM": null
+    },
+    {
+      "notes": [
+        {
+          "strumTime": 4800,
+          "daLine": 0,
+          "lane": 1,
+          "noteType": "normal",
+          "sustainLength": 300
+        },
+        {
+          "strumTime": 5400,
+          "daLine": 0,
+          "lane": 0,
+          "noteType": "normal",
+          "sustainLength": 300
+        },
+        {
+          "strumTime": 6000,
+          "daLine": 0,
+          "lane": 3,
+          "noteType": "normal",
+          "sustainLength": 300
+        }
+      ],
+      "altAnim": null,
+      "bpm": null,
+      "changeBPM": null
+    },
+    {
+      "notes": [
+        {
+          "strumTime": 7200,
+          "daLine": 1,
+          "lane": 1,
+          "noteType": "normal",
+          "sustainLength": 300
+        },
+        {
+          "strumTime": 7800,
+          "daLine": 1,
+          "lane": 0,
+          "noteType": "normal",
+          "sustainLength": 300
+        },
+        {
+          "strumTime": 8400,
+          "daLine": 1,
+          "lane": 3,
+          "noteType": "normal",
+          "sustainLength": 300
+        }
+      ],
+      "altAnim": null,
+      "bpm": null,
+      "changeBPM": null
+    },
+    {
+      "notes": [
+        {
+          "strumTime": 9600,
+          "daLine": 0,
+          "lane": 1,
+          "noteType": "normal",
+          "sustainLength": 150
+        },
+        {
+          "strumTime": 10200,
+          "daLine": 0,
+          "lane": 3,
+          "noteType": "normal",
+          "sustainLength": 0
+        },
+        {
+          "strumTime": 10500,
+          "daLine": 0,
+          "lane": 0,
+          "noteType": "normal",
+          "sustainLength": 0
+        },
+        {
+          "strumTime": 10800,
+          "daLine": 0,
+          "lane": 1,
+          "noteType": "normal",
+          "sustainLength": 450
+        }
+      ],
+      "altAnim": null,
+      "bpm": null,
+      "changeBPM": null
+    },
+    {
+      "notes": [
+        {
+          "strumTime": 12000,
+          "daLine": 1,
+          "lane": 1,
+          "noteType": "normal",
+          "sustainLength": 150
+        },
+        {
+          "strumTime": 12600,
+          "daLine": 1,
+          "lane": 3,
+          "noteType": "normal",
+          "sustainLength": 0
+        },
+        {
+          "strumTime": 12900,
+          "daLine": 1,
+          "lane": 0,
+          "noteType": "normal",
+          "sustainLength": 0
+        },
+        {
+          "strumTime": 13200,
+          "daLine": 1,
+          "lane": 1,
+          "noteType": "normal",
+          "sustainLength": 450
+        }
+      ],
+      "altAnim": null,
+      "bpm": null,
+      "changeBPM": null
+    },
+    {
+      "notes": [
+        {
+          "strumTime": 14400,
+          "daLine": 0,
+          "lane": 3,
+          "noteType": "normal",
+          "sustainLength": 0
+        },
+        {
+          "strumTime": 14700,
+          "daLine": 0,
+          "lane": 1,
+          "noteType": "normal",
+          "sustainLength": 0
+        },
+        {
+          "strumTime": 15300,
+          "daLine": 0,
+          "lane": 0,
+          "noteType": "normal",
+          "sustainLength": 0
+        },
+        {
+          "strumTime": 15600,
+          "daLine": 0,
+          "lane": 2,
+          "noteType": "normal",
+          "sustainLength": 300
+        }
+      ],
+      "altAnim": null,
+      "bpm": null,
+      "changeBPM": null
+    },
+    {
+      "notes": [
+        {
+          "strumTime": 16800,
+          "daLine": 1,
+          "lane": 3,
+          "noteType": "normal",
+          "sustainLength": 0
+        },
+        {
+          "strumTime": 17100,
+          "daLine": 1,
+          "lane": 1,
+          "noteType": "normal",
+          "sustainLength": 0
+        },
+        {
+          "strumTime": 17700,
+          "daLine": 1,
+          "lane": 0,
+          "noteType": "normal",
+          "sustainLength": 0
+        },
+        {
+          "strumTime": 18000,
+          "daLine": 1,
+          "lane": 2,
+          "noteType": "normal",
+          "sustainLength": 300
+        }
+      ],
+      "altAnim": null,
+      "bpm": null,
+      "changeBPM": null
+    },
+    {
+      "notes": [
+        {
+          "strumTime": 19200,
+          "daLine": 0,
+          "lane": 0,
+          "noteType": "normal",
+          "sustainLength": 0
+        },
+        {
+          "strumTime": 19500,
+          "daLine": 0,
+          "lane": 3,
+          "noteType": "normal",
+          "sustainLength": 0
+        },
+        {
+          "strumTime": 19800,
+          "daLine": 0,
+          "lane": 1,
+          "noteType": "normal",
+          "sustainLength": 750
+        }
+      ],
+      "altAnim": null,
+      "bpm": null,
+      "changeBPM": null
+    },
+    {
+      "notes": [
+        {
+          "strumTime": 21600,
+          "daLine": 1,
+          "lane": 0,
+          "noteType": "normal",
+          "sustainLength": 0
+        },
+        {
+          "strumTime": 21900,
+          "daLine": 1,
+          "lane": 3,
+          "noteType": "normal",
+          "sustainLength": 0
+        },
+        {
+          "strumTime": 22200,
+          "daLine": 1,
+          "lane": 1,
+          "noteType": "normal",
+          "sustainLength": 750
+        }
+      ],
+      "altAnim": null,
+      "bpm": null,
+      "changeBPM": null
+    },
+    {
+      "notes": [
+        {
+          "strumTime": 24000,
+          "daLine": 0,
+          "lane": 1,
+          "noteType": "normal",
+          "sustainLength": 0
+        },
+        {
+          "strumTime": 24300,
+          "daLine": 0,
+          "lane": 3,
+          "noteType": "normal",
+          "sustainLength": 0
+        },
+        {
+          "strumTime": 24600,
+          "daLine": 0,
+          "lane": 0,
+          "noteType": "normal",
+          "sustainLength": 750
+        }
+      ],
+      "altAnim": null,
+      "bpm": null,
+      "changeBPM": null
+    },
+    {
+      "notes": [
+        {
+          "strumTime": 26700,
+          "daLine": 1,
+          "lane": 3,
+          "noteType": "normal",
+          "sustainLength": 0
+        },
+        {
+          "strumTime": 27000,
+          "daLine": 1,
+          "lane": 0,
+          "noteType": "normal",
+          "sustainLength": 750
+        },
+        {
+          "strumTime": 26400,
+          "daLine": 1,
+          "lane": 1,
+          "noteType": "normal",
+          "sustainLength": 0
+        }
+      ],
+      "altAnim": null,
+      "bpm": null,
+      "changeBPM": null
+    },
+    {
+      "notes": [
+        {
+          "strumTime": 28800,
+          "daLine": 0,
+          "lane": 2,
+          "noteType": "normal",
+          "sustainLength": 0
+        },
+        {
+          "strumTime": 29100,
+          "daLine": 0,
+          "lane": 3,
+          "noteType": "normal",
+          "sustainLength": 0
+        },
+        {
+          "strumTime": 29400,
+          "daLine": 0,
+          "lane": 0,
+          "noteType": "normal",
+          "sustainLength": 1050
+        }
+      ],
+      "altAnim": null,
+      "bpm": null,
+      "changeBPM": null
+    },
+    {
+      "notes": [
+        {
+          "strumTime": 31200,
+          "daLine": 1,
+          "lane": 2,
+          "noteType": "normal",
+          "sustainLength": 0
+        },
+        {
+          "strumTime": 31500,
+          "daLine": 1,
+          "lane": 3,
+          "noteType": "normal",
+          "sustainLength": 0
+        },
+        {
+          "strumTime": 31800,
+          "daLine": 1,
+          "lane": 0,
+          "noteType": "normal",
+          "sustainLength": 1050
+        }
+      ],
+      "altAnim": null,
+      "bpm": null,
+      "changeBPM": null
+    },
+    {
+      "notes": [
+        {
+          "strumTime": 33600,
+          "daLine": 0,
+          "lane": 0,
+          "noteType": "normal",
+          "sustainLength": 0
+        },
+        {
+          "strumTime": 33900,
+          "daLine": 0,
+          "lane": 3,
+          "noteType": "normal",
+          "sustainLength": 0
+        },
+        {
+          "strumTime": 34500,
+          "daLine": 0,
+          "lane": 2,
+          "noteType": "normal",
+          "sustainLength": 0
+        },
+        {
+          "strumTime": 34800,
+          "daLine": 0,
+          "lane": 1,
+          "noteType": "normal",
+          "sustainLength": 450
+        }
+      ],
+      "altAnim": null,
+      "bpm": null,
+      "changeBPM": null
+    },
+    {
+      "notes": [
+        {
+          "strumTime": 36000,
+          "daLine": 1,
+          "lane": 0,
+          "noteType": "normal",
+          "sustainLength": 0
+        },
+        {
+          "strumTime": 36300,
+          "daLine": 1,
+          "lane": 3,
+          "noteType": "normal",
+          "sustainLength": 0
+        },
+        {
+          "strumTime": 36900,
+          "daLine": 1,
+          "lane": 2,
+          "noteType": "normal",
+          "sustainLength": 0
+        },
+        {
+          "strumTime": 37200,
+          "daLine": 1,
+          "lane": 1,
+          "noteType": "normal",
+          "sustainLength": 450
+        }
+      ],
+      "altAnim": null,
+      "bpm": null,
+      "changeBPM": null
+    },
+    {
+      "notes": [
+        {
+          "strumTime": 38400,
+          "daLine": 0,
+          "lane": 2,
+          "noteType": "normal",
+          "sustainLength": 450
+        },
+        {
+          "strumTime": 39000,
+          "daLine": 0,
+          "lane": 3,
+          "noteType": "normal",
+          "sustainLength": 300
+        },
+        {
+          "strumTime": 39600,
+          "daLine": 0,
+          "lane": 0,
+          "noteType": "normal",
+          "sustainLength": 450
+        }
+      ],
+      "altAnim": null,
+      "bpm": null,
+      "changeBPM": null
+    },
+    {
+      "notes": [
+        {
+          "strumTime": 40800,
+          "daLine": 1,
+          "lane": 2,
+          "noteType": "normal",
+          "sustainLength": 450
+        },
+        {
+          "strumTime": 41400,
+          "daLine": 1,
+          "lane": 3,
+          "noteType": "normal",
+          "sustainLength": 300
+        },
+        {
+          "strumTime": 42000,
+          "daLine": 1,
+          "lane": 0,
+          "noteType": "normal",
+          "sustainLength": 450
+        }
+      ],
+      "altAnim": null,
+      "bpm": null,
+      "changeBPM": null
+    },
+    {
+      "notes": [
+        {
+          "strumTime": 43200,
+          "daLine": 0,
+          "lane": 1,
+          "noteType": "normal",
+          "sustainLength": 0
+        },
+        {
+          "strumTime": 43800,
+          "daLine": 0,
+          "lane": 2,
+          "noteType": "normal",
+          "sustainLength": 0
+        },
+        {
+          "strumTime": 44400,
+          "daLine": 0,
+          "lane": 1,
+          "noteType": "normal",
+          "sustainLength": 0
+        },
+        {
+          "strumTime": 44550,
+          "daLine": 0,
+          "lane": 1,
+          "noteType": "normal",
+          "sustainLength": 0
+        },
+        {
+          "strumTime": 44700,
+          "daLine": 0,
+          "lane": 1,
+          "noteType": "normal",
+          "sustainLength": 0
+        },
+        {
+          "strumTime": 45000,
+          "daLine": 0,
+          "lane": 2,
+          "noteType": "normal",
+          "sustainLength": 0
+        }
+      ],
+      "altAnim": null,
+      "bpm": null,
+      "changeBPM": null
+    },
+    {
+      "notes": [
+        {
+          "strumTime": 45600,
+          "daLine": 1,
+          "lane": 1,
+          "noteType": "normal",
+          "sustainLength": 0
+        },
+        {
+          "strumTime": 46200,
+          "daLine": 1,
+          "lane": 2,
+          "noteType": "normal",
+          "sustainLength": 0
+        },
+        {
+          "strumTime": 46800,
+          "daLine": 1,
+          "lane": 1,
+          "noteType": "normal",
+          "sustainLength": 0
+        },
+        {
+          "strumTime": 46950,
+          "daLine": 1,
+          "lane": 1,
+          "noteType": "normal",
+          "sustainLength": 0
+        },
+        {
+          "strumTime": 47100,
+          "daLine": 1,
+          "lane": 1,
+          "noteType": "normal",
+          "sustainLength": 0
+        },
+        {
+          "strumTime": 47400,
+          "daLine": 1,
+          "lane": 2,
+          "noteType": "normal",
+          "sustainLength": 0
+        }
+      ],
+      "altAnim": null,
+      "bpm": null,
+      "changeBPM": null
+    },
+    {
+      "notes": [
+        {
+          "strumTime": 48000,
+          "daLine": 0,
+          "lane": 2,
+          "noteType": "normal",
+          "sustainLength": 450
+        },
+        {
+          "strumTime": 48600,
+          "daLine": 0,
+          "lane": 3,
+          "noteType": "normal",
+          "sustainLength": 300
+        },
+        {
+          "strumTime": 49200,
+          "daLine": 0,
+          "lane": 0,
+          "noteType": "normal",
+          "sustainLength": 450
+        }
+      ],
+      "altAnim": null,
+      "bpm": null,
+      "changeBPM": null
+    },
+    {
+      "notes": [
+        {
+          "strumTime": 50400,
+          "daLine": 1,
+          "lane": 2,
+          "noteType": "normal",
+          "sustainLength": 450
+        },
+        {
+          "strumTime": 51000,
+          "daLine": 1,
+          "lane": 3,
+          "noteType": "normal",
+          "sustainLength": 300
+        },
+        {
+          "strumTime": 51600,
+          "daLine": 1,
+          "lane": 0,
+          "noteType": "normal",
+          "sustainLength": 450
+        }
+      ],
+      "altAnim": null,
+      "bpm": null,
+      "changeBPM": null
+    },
+    {
+      "notes": [
+        {
+          "strumTime": 52800,
+          "daLine": 0,
+          "lane": 3,
+          "noteType": "normal",
+          "sustainLength": 1650
+        }
+      ],
+      "altAnim": null,
+      "bpm": null,
+      "changeBPM": null
+    },
+    {
+      "notes": [
+        {
+          "strumTime": 55200,
+          "daLine": 1,
+          "lane": 3,
+          "noteType": "normal",
+          "sustainLength": 1650
+        },
+        {
+          "strumTime": 55650,
+          "daLine": 1,
+          "lane": 4,
+          "noteType": "normal",
+          "sustainLength": 0
+        }
+      ],
+      "altAnim": null,
+      "bpm": null,
+      "changeBPM": null
+    },
+    {
+      "notes": [
+        {
+          "strumTime": 57600,
+          "daLine": 0,
+          "lane": 2,
+          "noteType": "normal",
+          "sustainLength": 0
+        },
+        {
+          "strumTime": 57900,
+          "daLine": 0,
+          "lane": 3,
+          "noteType": "normal",
+          "sustainLength": 0
+        },
+        {
+          "strumTime": 58200,
+          "daLine": 0,
+          "lane": 0,
+          "noteType": "normal",
+          "sustainLength": 1050
+        }
+      ],
+      "altAnim": null,
+      "bpm": null,
+      "changeBPM": null
+    },
+    {
+      "notes": [
+        {
+          "strumTime": 60000,
+          "daLine": 1,
+          "lane": 2,
+          "noteType": "normal",
+          "sustainLength": 0
+        },
+        {
+          "strumTime": 60300,
+          "daLine": 1,
+          "lane": 3,
+          "noteType": "normal",
+          "sustainLength": 0
+        },
+        {
+          "strumTime": 60600,
+          "daLine": 1,
+          "lane": 0,
+          "noteType": "normal",
+          "sustainLength": 1050
+        },
+        {
+          "strumTime": 62100,
+          "daLine": 1,
+          "lane": 6,
+          "noteType": "normal",
+          "sustainLength": 0
+        }
+      ],
+      "altAnim": null,
+      "bpm": null,
+      "changeBPM": null
+    },
+    {
+      "notes": [
+        {
+          "strumTime": 62400,
+          "daLine": 0,
+          "lane": 0,
+          "noteType": "normal",
+          "sustainLength": 0
+        },
+        {
+          "strumTime": 62700,
+          "daLine": 0,
+          "lane": 3,
+          "noteType": "normal",
+          "sustainLength": 0
+        },
+        {
+          "strumTime": 63300,
+          "daLine": 0,
+          "lane": 2,
+          "noteType": "normal",
+          "sustainLength": 0
+        },
+        {
+          "strumTime": 63600,
+          "daLine": 0,
+          "lane": 1,
+          "noteType": "normal",
+          "sustainLength": 450
+        },
+        {
+          "strumTime": 64500,
+          "daLine": 0,
+          "lane": 6,
+          "noteType": "normal",
+          "sustainLength": 0
+        }
+      ],
+      "altAnim": null,
+      "bpm": null,
+      "changeBPM": null
+    },
+    {
+      "notes": [
+        {
+          "strumTime": 64800,
+          "daLine": 1,
+          "lane": 0,
+          "noteType": "normal",
+          "sustainLength": 0
+        },
+        {
+          "strumTime": 65100,
+          "daLine": 1,
+          "lane": 3,
+          "noteType": "normal",
+          "sustainLength": 0
+        },
+        {
+          "strumTime": 65700,
+          "daLine": 1,
+          "lane": 2,
+          "noteType": "normal",
+          "sustainLength": 0
+        },
+        {
+          "strumTime": 66000,
+          "daLine": 1,
+          "lane": 1,
+          "noteType": "normal",
+          "sustainLength": 450
+        }
+      ],
+      "altAnim": null,
+      "bpm": null,
+      "changeBPM": null
+    },
+    {
+      "notes": [
+        {
+          "strumTime": 67200,
+          "daLine": 0,
+          "lane": 2,
+          "noteType": "normal",
+          "sustainLength": 0
+        },
+        {
+          "strumTime": 67500,
+          "daLine": 0,
+          "lane": 3,
+          "noteType": "normal",
+          "sustainLength": 0
+        },
+        {
+          "strumTime": 67800,
+          "daLine": 0,
+          "lane": 0,
+          "noteType": "normal",
+          "sustainLength": 0
+        },
+        {
+          "strumTime": 68100,
+          "daLine": 0,
+          "lane": 2,
+          "noteType": "normal",
+          "sustainLength": 0
+        },
+        {
+          "strumTime": 68400,
+          "daLine": 0,
+          "lane": 1,
+          "noteType": "normal",
+          "sustainLength": 450
+        }
+      ],
+      "altAnim": null,
+      "bpm": null,
+      "changeBPM": null
+    },
+    {
+      "notes": [
+        {
+          "strumTime": 69600,
+          "daLine": 1,
+          "lane": 2,
+          "noteType": "normal",
+          "sustainLength": 0
+        },
+        {
+          "strumTime": 69900,
+          "daLine": 1,
+          "lane": 3,
+          "noteType": "normal",
+          "sustainLength": 0
+        },
+        {
+          "strumTime": 70200,
+          "daLine": 1,
+          "lane": 0,
+          "noteType": "normal",
+          "sustainLength": 0
+        },
+        {
+          "strumTime": 70500,
+          "daLine": 1,
+          "lane": 2,
+          "noteType": "normal",
+          "sustainLength": 0
+        },
+        {
+          "strumTime": 70800,
+          "daLine": 1,
+          "lane": 1,
+          "noteType": "normal",
+          "sustainLength": 450
+        },
+        {
+          "strumTime": 71700,
+          "daLine": 1,
+          "lane": 6,
+          "noteType": "normal",
+          "sustainLength": 0
+        }
+      ],
+      "altAnim": null,
+      "bpm": null,
+      "changeBPM": null
+    },
+    {
+      "notes": [
+        {
+          "strumTime": 72000,
+          "daLine": 0,
+          "lane": 0,
+          "noteType": "normal",
+          "sustainLength": 0
+        },
+        {
+          "strumTime": 72300,
+          "daLine": 0,
+          "lane": 3,
+          "noteType": "normal",
+          "sustainLength": 0
+        },
+        {
+          "strumTime": 72900,
+          "daLine": 0,
+          "lane": 2,
+          "noteType": "normal",
+          "sustainLength": 0
+        },
+        {
+          "strumTime": 73200,
+          "daLine": 0,
+          "lane": 1,
+          "noteType": "normal",
+          "sustainLength": 450
+        },
+        {
+          "strumTime": 74100,
+          "daLine": 0,
+          "lane": 6,
+          "noteType": "normal",
+          "sustainLength": 0
+        }
+      ],
+      "altAnim": null,
+      "bpm": null,
+      "changeBPM": null
+    },
+    {
+      "notes": [
+        {
+          "strumTime": 74400,
+          "daLine": 1,
+          "lane": 0,
+          "noteType": "normal",
+          "sustainLength": 0
+        },
+        {
+          "strumTime": 74700,
+          "daLine": 1,
+          "lane": 3,
+          "noteType": "normal",
+          "sustainLength": 0
+        },
+        {
+          "strumTime": 75300,
+          "daLine": 1,
+          "lane": 2,
+          "noteType": "normal",
+          "sustainLength": 0
+        },
+        {
+          "strumTime": 75600,
+          "daLine": 1,
+          "lane": 1,
+          "noteType": "normal",
+          "sustainLength": 450
+        }
+      ],
+      "altAnim": null,
+      "bpm": null,
+      "changeBPM": null
+    },
+    {
+      "notes": [],
+      "altAnim": null,
+      "bpm": 100,
+      "changeBPM": false
+    }
+  ],
+  "needsVoices": true,
+  "title": "bopeebo",
+  "meta": {
+    "Artist": "Unknown",
+    "BPM": 100,
+    "Speed": 1.6
+  }
+}

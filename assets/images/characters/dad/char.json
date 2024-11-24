@@ -1,0 +1,20 @@
+{
+  "name": "dad",
+  "texture_path": "default",
+  "health_icon": "none",
+  "health_colors": [
+    255,
+    255,
+    255
+  ],
+  "animations": [
+    {
+      "name": "idle",
+      "prefix": "DAD IDLE",
+      "fps": 24,
+      "looped": true,
+      "OFFSET_X": 0,
+      "OFFSET_Y": 0
+    }
+  ]
+}
