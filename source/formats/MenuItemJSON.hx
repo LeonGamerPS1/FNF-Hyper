@@ -7,7 +7,13 @@ using StringTools;
 
 typedef MenuItems =
 {
+<<<<<<< HEAD
     var items:Array<MenuItem>;
+=======
+	var textSize:Null<Int>;
+	var font:Null<String>;
+	var items:Array<MenuItem>;
+>>>>>>> 70c5d2d265889dbb709b0be3f1b9dea029c4e9a9
 }
 
 typedef MenuItem =

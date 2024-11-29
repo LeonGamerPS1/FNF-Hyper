@@ -1,3 +1,19 @@
 {
+<<<<<<< HEAD
   "items": [{"name": "Play-State"}, {"name": "gamejolt_login"},{ "name": "options"}]
 }
+=======
+  "textSize": 20,
+  "font": "VCR OSD Mono",
+  "items": [
+    {
+      "name": "Play-State",
+      "TargetState": "TitleState"
+    },
+    {
+      "name": "Freeplay",
+      "TargetState": "TitleState"
+    }
+  ]
+}
+>>>>>>> 70c5d2d265889dbb709b0be3f1b9dea029c4e9a9

@@ -1,6 +1,8 @@
 package states;
 
+import flixel.FlxCamera.FlxCameraFollowStyle;
 import flixel.FlxG;
+<<<<<<< HEAD
 import flixel.addons.transition.FlxTransitionSprite.GraphicTransTileCircle;
 import flixel.addons.transition.FlxTransitionableState;
 import flixel.addons.transition.TransitionData;
@@ -11,21 +13,32 @@ import flixel.math.FlxRect;
 import flixel.text.FlxText;
 import flixel.tweens.FlxTween;
 import flixel.util.FlxColor;
+=======
+import flixel.FlxState;
+import flixel.effects.FlxFlicker;
+import flixel.text.FlxText;
+import flixel.tweens.FlxTween;
+>>>>>>> 70c5d2d265889dbb709b0be3f1b9dea029c4e9a9
 import formats.MenuItemJSON;
 import objects.AtlasSprite;
 
+<<<<<<< HEAD
 class TitleState extends MusicBeatState
 {
 	var menuBois:Array<FlxText> = [];
 	var seste:Array<String> = [];
+=======
+class TitleState extends MusicBeatState {
+	var menuBois:Array<FlxText>;
+>>>>>>> 70c5d2d265889dbb709b0be3f1b9dea029c4e9a9
 	var originalBffs:Array<MenuItem> = [];
+	var states:Array<Class<FlxState>> = [];
 
 	var curSelected:Int = 0;
 
 	public var gf:AtlasSprite;
 
-	override function create()
-	{
+	override function create() {
 		FlxG.sound.cache('assets/songs/bopeebo/Inst.ogg');
 		FlxG.sound.playMusic('assets/songs/bopeebo/Inst.ogg', 0.5, true);
 		gf = new AtlasSprite(200, 500);
@@ -33,23 +46,42 @@ class TitleState extends MusicBeatState
 		add(gf);
 
 		menuBois = [];
-		originalBffs = MenuItemJSON.parseShit('menuItems.json').items;
+		var parsey = MenuItemJSON.parseShit('menuItems.json');
+		var items = parsey.items;
+		var size:Int = parsey.textSize != null && !Math.isNaN(parsey.textSize) ? parsey.textSize : 10;
 
-		for (i in 0...originalBffs.length)
-		{
+		originalBffs = items;
+
+		for (i in 0...originalBffs.length) {
 			var slicedMenuItem = originalBffs[i].name;
+<<<<<<< HEAD
 			seste.push(slicedMenuItem);
+=======
+			var slicedMenuState = originalBffs[i].TargetState;
+>>>>>>> 70c5d2d265889dbb709b0be3f1b9dea029c4e9a9
 
-			var text:FlxText = new FlxText(0, 0, 0, slicedMenuItem, 10, false);
+			var text:FlxText = new FlxText(0, 0, 0, slicedMenuItem, size, false);
+			text.setFormat(parsey.font, size);
 			text.screenCenter();
 			var previousText = menuBois[menuBois.length - 1] ?? text;
 			text.y += previousText.size * i;
 			menuBois.push(text);
 			add(text);
-		}
 
+<<<<<<< HEAD
 		originalBffs = [];
 
+=======
+			var instance = Type.resolveClass(slicedMenuState);
+			var state:Class<FlxState> = Type.createInstance(instance, []);
+			states.push(state);
+		}
+		for (index => value in originalBffs)
+		{
+			originalBffs.remove(value);
+		}
+		originalBffs = null;
+>>>>>>> 70c5d2d265889dbb709b0be3f1b9dea029c4e9a9
 		#if cpp cpp.vm.Gc.run(true); #end
 
 		super.create();
@@ -67,8 +99,7 @@ class TitleState extends MusicBeatState
 		transOut = FlxTransitionableState.defaultTransOut;
 	}
 
-	override function update(elapsed:Float)
-	{
+	override function update(elapsed:Float) {
 		super.update(elapsed);
 		Conductor.songPosition = FlxG.sound.music.time;
 		FlxG.camera.zoom = FlxMath.lerp(1, FlxG.camera.zoom, Math.exp(-FlxG.elapsed * 9 * 1));
@@ -80,8 +111,7 @@ class TitleState extends MusicBeatState
 
 		if (curSelected < 0)
 			curSelected = menuBois.length - 1;
-		for (text in menuBois)
-		{
+		for (text in menuBois) {
 			var selected = i == curSelected;
 			var selname:String = seste[curSelected];
 			// var color = selected ? FlxColor.YELLOW : FlxColor.WHITE;
@@ -91,7 +121,18 @@ class TitleState extends MusicBeatState
 			text.alpha = selected ? 1 : 0.4;
 
 			if (!text.isOnScreen(FlxG.camera) && text == menuBois[curSelected])
-				FlxG.camera.follow(text, TOPDOWN);
+				FlxG.camera.follow(text, FlxCameraFollowStyle.LOCKON);
+
+			if (selected && !FlxFlicker.isFlickering(text)) {
+				if (controls.ACCEPT) {
+					FlxFlicker.flicker(text, 1, 0.06, true, true, function(Flicker:FlxFlicker) {
+						for (index => value in menuBois) {
+							FlxTween.tween(value.offset, {y: value.offset.y - 600}, 1.3 * index);
+							FlxTween.tween(text.offset, {y: text.offset.y - 600}, 1.3 * index);
+						}
+					});
+				}
+			}
 
 			if (controls.ACCEPT)
 			{
@@ -130,8 +171,7 @@ class TitleState extends MusicBeatState
 			curSelected--;
 	}
 
-	override function destroy()
-	{
+	override function destroy() {
 		FlxG.sound.music.stop();
 		FlxG.sound.music.time = 0;
 
