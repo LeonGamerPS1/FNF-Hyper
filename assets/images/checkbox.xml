@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="checkbox.png">
+	<!-- Created with Adobe Animate version 21.0.9.42677 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="off0000" x="0" y="0" width="137" height="137"/>
+	<SubTexture name="on0000" x="0" y="0" width="137" height="137"/>
+	<SubTexture name="on0001" x="0" y="0" width="137" height="137"/>
+	<SubTexture name="on0002" x="0" y="137" width="137" height="137"/>
+	<SubTexture name="on0003" x="0" y="274" width="137" height="137"/>
+	<SubTexture name="on0004" x="0" y="274" width="137" height="137"/>
+	<SubTexture name="on0005" x="137" y="0" width="137" height="137"/>
+	<SubTexture name="on0006" x="274" y="0" width="137" height="137"/>
+	<SubTexture name="on0007" x="274" y="0" width="137" height="137"/>
+	<SubTexture name="on0008" x="411" y="0" width="137" height="137"/>
+	<SubTexture name="on0009" x="137" y="137" width="137" height="137"/>
+	<SubTexture name="on0010" x="137" y="137" width="137" height="137"/>
+	<SubTexture name="pop0000" x="137" y="274" width="137" height="137"/>
+	<SubTexture name="pop0001" x="274" y="137" width="137" height="137"/>
+	<SubTexture name="pop0002" x="411" y="137" width="137" height="137"/>
+	<SubTexture name="pop0003" x="274" y="274" width="137" height="137"/>
+	<SubTexture name="pop0004" x="411" y="274" width="137" height="137"/>
+</TextureAtlas>

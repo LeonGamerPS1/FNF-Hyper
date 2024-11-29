@@ -1,12 +1,3 @@
 {
-  "items": [
-    {
-      "name": "Play-State",
-      "TargetState": "PlayState"
-    },
-    {
-      "name": "Freeplay",
-      "TargetState": "Freeplay"
-    }
-  ]
+  "items": [{"name": "Play-State"}, {"name": "gamejolt_login"},{ "name": "options"}]
 }

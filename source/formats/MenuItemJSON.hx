@@ -1,6 +1,7 @@
 package formats;
 
 import haxe.Json;
+import openfl.utils.Assets as OpenFLAssets;
 
 using StringTools;
 
@@ -15,6 +16,11 @@ typedef MenuItem =
     var TargetState:String;
 }
 
+#if !openfl_debug
+@:fileXml('tags="haxe,release"')
+@:noDebug
+#end
+
 class MenuItemJSON {
     /**
 	 * Parses a json file and returns a Typedef thing
@@ -22,7 +28,7 @@ class MenuItemJSON {
 	 * @return parsed json typedef ass
 	 */
     public static function parseShit(filename:Dynamic):MenuItems {
-        var rawShit:String = Assets.getText("assets/data/" + filename.toString());
+        var rawShit:String = OpenFLAssets.getText("assets/data/" + filename.toString());
         while (!rawShit.endsWith("}"))
             rawShit = rawShit.substr(0, rawShit.length - 1);
 

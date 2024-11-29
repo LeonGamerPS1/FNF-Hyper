@@ -14,5 +14,9 @@
 		"titleBar.activeBackground": "#574a4fdd",
 		"activityBar.background": "#4b3e43aa"
 	},
-	"window.title": "${dirty}${activeEditorShort}${separator}${rootName}${separator}${profileName}${separator}${appName}${separator}[Branch: main]"
+	"window.title": "${dirty}${activeEditorShort}${separator}${rootName}${separator}${profileName}${separator}${appName}${separator}[Branch: main]",
+	
+	"editor.fontFamily": "VCR OSD Mono",
+	"editor.fontSize": 14,
+	"editor.fontLigatures": true
 }

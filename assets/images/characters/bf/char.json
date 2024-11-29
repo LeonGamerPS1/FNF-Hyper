@@ -1,0 +1,50 @@
+{
+  "name": "bf",
+  "texture_path": "char",
+  "health_icon": "none",
+  "health_colors": [128, 0, 128],
+  "flipX": true,
+  "animations": [
+    {
+      "name": "idle",
+      "prefix": "BF idle dance",
+      "fps": 24,
+      "looped": true,
+      "OFFSET_X": 0,
+      "OFFSET_Y": 0
+    },
+    {
+      "name": "singLEFT",
+      "prefix": "BF NOTE LEFT0",
+      "fps": 24,
+      "looped": false,
+      "OFFSET_X": 0,
+      "OFFSET_Y": 0
+    },
+    {
+      "name": "singDOWN",
+      "prefix": "BF NOTE DOWN0",
+      "fps": 24,
+      "looped": false,
+      "OFFSET_X": 0,
+      "OFFSET_Y": 0
+    },
+    {
+      "name": "singUP",
+      "prefix": "BF NOTE UP0",
+      "fps": 24,
+      "looped": false,
+      "OFFSET_X": 0,
+      "OFFSET_Y": 0
+    },
+    {
+      "name": "singRIGHT",
+      "prefix": "BF NOTE RIGHT0",
+      "fps": 24,
+      "looped": false,
+      "OFFSET_X": 0,
+      "OFFSET_Y": 0
+    }
+  ],
+  "scale": 1
+}

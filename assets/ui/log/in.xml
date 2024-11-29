@@ -1,0 +1,8 @@
+<vbox width="100%" style="padding:10px;">
+    <section-header text="Default Text Inputs" />
+    <hbox>
+        <grid>
+            <textfield placeholder="Username Here" />
+        </grid>
+    </hbox>
+</vbox>

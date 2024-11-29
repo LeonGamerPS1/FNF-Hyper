@@ -28,10 +28,8 @@ class CountdownHandler extends FlxTypedGroup<CountdownSprite> {
     function attemptCountdown(END:Void -> Void) {
         var introAssets:Map<String, Array<String>> = new Map<String, Array<String>>();
         introAssets.set('default', ['go', 'go', 'ready', "set", "go"]);
-        trace(introAssets);
 
-        var introAlts:Array<String> = introAssets.get('default');
-        var altSuffix:String = "";
+
         var loopsleft = 4;
         var countDown:CountdownSprite;
         var count:Int = 0;
@@ -40,7 +38,6 @@ class CountdownHandler extends FlxTypedGroup<CountdownSprite> {
         new FlxTimer().start(Conductor.crochet / 1000, function(tmr:FlxTimer) {
             loopsleft--;
             count += 1;
-            trace("The Countdown has been ran " + count + ' times.');
             countDown = new CountdownSprite(0, 0, 'go');
             countDown.alpha = 0;
             add(countDown);
