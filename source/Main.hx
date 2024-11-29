@@ -24,7 +24,7 @@ class Main extends openfl.display.Sprite
 
 		super();
 		Toolkit.init();
-		addChild(new FlxGame(0, 0, states.TitleState));
+		addChild(new FlxGame(0, 0, PlayState));
 
 		PlayerSettings.init();
 		#if flixel_addons
